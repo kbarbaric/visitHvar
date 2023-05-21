@@ -1,0 +1,315 @@
+/*--------------------Global--------------------*/
+body {
+    font-family: 'sans-serif', cursive;
+    margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+#wrapper {
+  background-color: #fafafa;
+
+}
+.container {
+    padding-top: 95px;
+    position: relative;
+    margin: auto;
+}
+
+.title-underline {
+    width: 300px;
+    height: 3px;
+    background-color: #0077b6;
+    display: block;
+    margin: 0px auto;
+  }
+
+.title{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+.flex-container-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-top: 95px;
+    position: relative;
+}
+.flex-container-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-top: 95px;
+    position: relative;
+}
+button{
+    width: 60px;
+    background-color: white;
+}
+/*--------------------Header--------------------*/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-image: linear-gradient(to bottom,#03045e, #00b4d8);
+    color: #fffce8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header h1{
+    font-family: 'Amarante';
+    font-size: 36px;
+    display: inline-block;
+}
+header a{
+    font-size: 18px;
+    padding: 0 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+}
+
+/*--------------------INFO--------------------*/
+#info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#infoImage{
+    max-width: auto ;
+    max-height: 300px;
+    margin-left: 20px;
+}
+#infoText{
+    max-height: 350px;
+    background-color: #0077b6;
+    color: #fffce8;
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+/*--------------------KULTURA--------------------*/
+#kultZnamenitosti{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+#kultZnamenitosti h4{
+    padding: 0 5px;
+    font-size: 18px;
+    max-width: 300px;
+}
+.izgledZnam{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.izgledZnam img{
+    max-width: 300px;
+}
+.izgledZnam p{
+    max-width: 300px;
+    font-size: 14px;
+}
+
+/*--------------------PLAZA--------------------*/
+
+
+.izgledPlaza{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.izgledPlaza img{
+    max-width: 600px;
+}
+.opisPlaze{
+    max-height: 300px;
+    max-width: 750px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.izgledPlaza:hover{
+    background-color: #fffce8;
+    transform: translateY();
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.2);
+}
+.izgledPlaza form{
+    padding: 30px 0;
+}
+.recenzija-btn{
+    color: #fafafa;
+    text-decoration: none;
+    background-color: #03045e;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px 10px;
+}
+/*--------------------HOTEL--------------------*/
+#hoteli{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.izgledHotela{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+.izgledHotela img{
+    max-width: 300px;
+}
+.izgledHotela a{
+    color: #fafafa;
+    text-decoration: none;
+    background-color: #03045e;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px 10px;
+}
+.izgledHotela a:visited{
+    color: #fffce8;
+    text-decoration: none;
+}
+
+/*--------------------TRANSPORT--------------------*/
+.katamaran{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.katamaran table{
+    padding: 0 40px;
+    font-family: 'Times New Roman';
+    font-size: 16;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.katamaran table tr td{
+    padding: 0 20px;
+}
+/*--------------------Footer--------------------*/
+footer{
+    background-image: linear-gradient(to bottom, #00b4d8, #03045e);
+    color: #fffce8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#social-media{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#social-media a{
+    color: white;
+    border:  5px solid white; 
+    padding: 9px;
+    margin: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+#kontakt img{
+    height: 60px;
+    background-color: #fafafa;
+}
+
+/*--------------------Media do 768 px--------------------*/
+@media only screen and (max-width: 1040px)
+{
+    /*-------Header------*/
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    header h1{
+        font-size: 24px;
+    }
+    header a{
+        font-size: 18px;
+        padding: 0 5px;
+    }   
+    /*-------Info------*/
+    #info{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+    #infoText{
+        color: #fffce8;
+        padding:  0 10px;
+        margin: 0;
+    }
+    #info img{
+        width: 90%;
+        max-height: auto;
+        margin: auto;
+        padding: 5px;
+    }
+
+    /*-------Kultura------*/
+    .izgledZnam{
+        margin: 5px;
+    }
+    /*-------Plaze------*/
+    .izgledPlaza{
+        flex-direction: column;
+        max-width: 90%;
+        background-color: #fffce8;
+    }
+    .izgledPlaza img{
+        max-width: 100%;
+    }
+    /*-------Hoteli------*/
+    .izgledHotela{
+        padding: 0;
+    }
+    .izgledHotela img{
+        max-width: 75%;
+    }
+    /*-------Katamaran------*/
+    .katamaran{
+        flex-direction: column;
+    }
+    .katamaran table{
+        padding: 0 40px;
+        margin: 20px 0;
+    }
+    /*-------Footer------*/
+
+}

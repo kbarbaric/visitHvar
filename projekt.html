@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Visit Hvar Town</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./styles/stil.css">
+    <link href='https://fonts.googleapis.com/css?family=Amarante' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/e9f85e25f2.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!--------------- HEADER --------------->
+        <header>
+            <h1>Visit Hvar</h1>
+            <nav>
+                <a href="#info">O Hvaru</a>
+                <a href="#kultura">Kultura</a>
+                <a href="#plaza">Plaže</a>
+                <a href="#hotel">Smještaj</a>
+                <a href="#transport">Kako do Hvara?</a>
+            </nav>
+        </header>
+        
+        <!--------------- INFO --------------->
+        <section id="info" class="container">
+            <div id="infoImage">
+                <img src="./source/info/pozadina.jpg" alt="pozadina">
+            </div>
+            <div id="infoText" class="flex-container-column">
+                <h3 class="title">O Hvaru</h3>
+                <p>Hvar (čakavski: Hvor ili For, grčki: Pharos, latinski: Pharia) grad je u Hrvatskoj. Nalazi se na zapadnom kraju istoimenog otoka, čije je najveće naselje. U gradu živi oko 4000 stanovnika. Grad ima bogatu povijest i jedna je od najpoznatijih turističkih destinacija u Hrvatskoj.</p>
+            </div>
+        </section>
+        
+        <!------------------------- KULTURA ------------------------->
+        <section class="flex-container-row" id="kultura">
+            <h2 class="title">KULTURA</h2>
+            <span class="title-underline"></span>
+            <span id="kultZnamenitosti" class="flex-container-row">
+                <article class="izgledZnam">
+                    <h4>Pjaca - Trg sv. Stjepana</h4> 
+                    <a href="https://goo.gl/maps/Yd3A2NDvBA1yohf97" target="_blank"><img src="./source/kultura/hvarska-pjaca.jpg" alt="Pjaca - Trg sv. Stepana"></a>
+                    <p>Središnji hvarski trg, Trg sv. Stjepana, poznat i pod nazivom Pjaca, najveći je trg u Dalmaciji. Obuhvaća 4500 m².  Pjaca je u potpunosti popločana 1780. godine.</p>
+                    <i class="fa-sharp fa-solid fa-heart" onclick="PromijeniBoju()" id="srce1"></i>
+                </article>
+                <article class="izgledZnam">
+                    <h4>Hvarsko povijesno kazalište</h4>
+                    <a href="https://goo.gl/maps/aU56MyzxoirTHsb17" target="_blank"><img src="./source/kultura/kazaliste.jpg" alt="Hvarsko povijesno kazalište"></a>
+                    <p>Hvarsko povijesno kazalište smješteno je na prvom katu zgrade Arsenala. Izgrađeno je 1612. godine za vrijeme kneza Pietra Semitecola. Na nadvratniku ulaznih vrata kazališta upisano je: ANNO SECVNDO PACIS MDCXII.</p>
+                    <i class="fa-sharp fa-solid fa-heart" onclick="PromijeniBoju2()" id="srce2"></i>
+                </article>
+                <article class="izgledZnam">
+                    <h4>Katedrala sv. Stjepana </h4>
+                    <a href="https://goo.gl/maps/BQXBtqgpvj3yKEQ76" target="_blank"><img src="./source/kultura/katedrala.jpg" alt="Hvarska katedrala"></a>
+                    <p>Katedrala sv. Stjepana I., pape i mučenika izgrađena je na mjestu benediktinskog samostana sv. Marije od Lesne. Katedralom postaje u 13. st., kada se središte biskupije premješta iz Starog Grada u Hvar.</p>
+                    <i class="fa-sharp fa-solid fa-heart" onclick="PromijeniBoju3()" id="srce3"></i>
+                </article>
+                <article class="izgledZnam">
+                    <h4>Tvrđava - Fortica</h4>
+                    <a href="https://goo.gl/maps/4N9tsgbo6ea3gWJh6" target="_blank"><img src="./source/kultura/tvrdava.jpg" alt="Gradska tvrđava i srednjovjekovne gradske zidine"></a>
+                    <p>Gradnja gradske tvrđave počinje nakon 1278. godine, kada Hvar dolazi pod vlast Venecije. Tvrđava sa gradskim zidinama čini jedinstven obrambeni sustav.</p>
+                    <i class="fa-sharp fa-solid fa-heart" onclick="PromijeniBoju4()" id="srce4"></i>
+                </article>
+            </span>
+        </section>
+        
+        <!------------------------- PLAZA ------------------------->
+        <section id="plaza" class="flex-container-column">
+            <h2 class="title">PLAŽE</h2>
+            <span class="title-underline"></span>
+            <span id="plaze">
+                <article class="izgledPlaza">
+                    <img src="./source/plaza/lucisce.jpg" alt="Plaža Lučišće">
+                    <div class="opisPlaze">
+                        <h4>Lučišće</h4>
+                        <small>Lijepa uvala Lučišća smještena je nedaleko grada Hvara. Šljunčano žalo uvale Lučišća okupano suncem, kristalno čisto more, gusta borova šuma i pjesma cvrčaka najbolji su recept za opuštanje u dugim toplim ljetnim danima.</small>
+                        <form class="flex-container-column">
+                            <label for="lucisce">Napišite recenziju:</label>
+                            <textarea name="lucisce" id="lucisce" cols="30" rows="5" placeholder="Recenzija..."></textarea>
+                            <a onclick="Hvala()" class="recenzija-btn">Ostavi recenziju</a> 
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                        </form>
+                    </div>   
+                    
+                </article>
+                <article class="izgledPlaza">
+                    <img src="./source/plaza/hulahula.jpg" alt="Plaža Hula Hula">
+                    <div class="opisPlaze">
+                        <h4>Hula Hula</h4>
+                        <small>Jedan od najpopularnijih klubova na plaži u gradu Hvaru.
+                            Svima onima u potrazi za dobrom zabavom Hula-Hula Beach Club nudi osvježenje, ne samo u plivanju i sočnim cocktailima,  već i u plesu, te uživanju u  glazbi  poznatih svjetskih DJ-a.</small>
+                        <form class="flex-container-column">
+                            <label for="Hula">Napišite recenziju:</label>
+                            <textarea name="Hula" id="Hula" cols="30" rows="5" placeholder="Recenzija..."></textarea>
+                            <a onclick="Hvala()" class="recenzija-btn">Ostavi recenziju</a>
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                        </form>
+                    </div>
+                </article>
+                <article class="izgledPlaza">
+                    <img src="./source/plaza/bonj.jpg" alt="Plaža Bonj">
+                    <div class="opisPlaze">
+                        <h4>Bonj</h4>
+                        <small>Plaža Bonj, les bains - plaža u gradu Hvaru uz privatne šatore za masaže te restoran i bar, sadrži i tuševe, ležaljke te pontone. Sve u svemu, Bonj pruža jedinstveni doživljaj boravka uz more.</small>
+                        <form class="flex-container-column">
+                            <label for="Bonj">Napišite recenziju:</label>
+                            <textarea name="Bonj" id="Bonj" cols="30" rows="5" placeholder="Recenzija..."></textarea>
+                            <a onclick="Hvala()" class="recenzija-btn">Ostavi recenziju</a>
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                        </form>
+                    </div>
+                    
+                </article>
+            </span>
+        </section>
+        
+        <!------------------------- HOTEL ------------------------->
+        <section id="hotel" class="flex-container-row">
+            <h2 class="title">SMJEŠTAJ</h2>
+            <span class="title-underline"></span>
+            <span id="hoteli">
+                <article class="izgledHotela">
+                    <h4>Palace Elisabeth &#9733;&#9733;&#9733;&#9733;&#9733;</h4>
+                    <img src="./source/hotel/palace.jpg" alt="Palace Elisabeth">
+                    <a href="https://www.suncanihvar.com/hr/palace-elisabeth-hvar-heritage-hotel.html" target="_blank">Rezervacija noćenja</a>
+                </article>
+                <article class="izgledHotela">
+                    <h4>Hotel Moeesy &#9733;&#9733;&#9733;&#9733;&#9733;</h4>
+                    <img src="./source/hotel/moeesy.jpg" alt="Hotel Moeesy">
+                    <a href="https://moeesy.com/" target="_blank">Rezervacija noćenja</a>
+                </article>
+                <article class="izgledHotela">
+                    <h4>Amfora Hvar Grand Beach Resort &#9733;&#9733;&#9733;&#9733;</h4>
+                    <img src="./source/hotel/amfora.jpg" alt="Amfora Hvar Grand Beach Resort">
+                    <a href="https://www.suncanihvar.com/hr/amfora-hvar-grand-beach-resort.html" target="_blank">Rezervacija noćenja</a>
+                </article>
+                <article class="izgledHotela">
+                    <h4>Adriana Hvar Spa Hotel &#9733;&#9733;&#9733;&#9733;</h4>
+                    <img src="./source/hotel/adriana.jpg" alt="Adriana Hvar Spa Hotel">
+                    <a href="https://www.suncanihvar.com/hr/adriana-hvar-spa-hotel.html" target="_blank">Rezervacija noćenja</a>
+                </article>
+            </span>
+        </section>
+        
+        <!------------------------- TRANSPORT ------------------------->
+        <section id="transport" class="flex-container-column">
+            <h2 class="title">KAKO DO HVARA?</h2>
+            <span class="title-underline"></span>
+            <h4>Katamaranske linije</h4>
+            <div class="katamaran">
+                <table>
+                    <tr>
+                        <th colspan="3">SPLIT &#8594; HVAR</th>
+                    </tr>
+                    <tr>
+                        <td>POLAZAK</td>
+                        <td>DOLAZAK</td>
+                        <td>BRODAR</td>
+                    </tr>
+                    <tr>
+                        <td>9:00</td>
+                        <td>9:50</td>
+                        <td>Krilo</td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td>9:50</td>
+                        <td>Jadrolinija</td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td>12:50</td>
+                        <td>Krilo</td>
+                    </tr>
+                    <tr>
+                        <td>14:00</td>
+                        <td>14:50</td>
+                        <td>Jadrolinija</td>
+                    </tr>
+                    <tr>
+                        <td>15:00</td>
+                        <td>15:50</td>
+                        <td>Jadrolinija</td>
+                    </tr>
+                    <tr>
+                        <td>17:00</td>
+                        <td>9:50</td>
+                        <td>Krilo</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="3">HVAR &#8594; SPLIT</th>
+                    </tr>
+                    <tr>
+                        <td>POLAZAK</td>
+                        <td>DOLAZAK</td>
+                        <td>BRODAR</td>
+                    </tr>
+                    <tr>
+                        <td>9:30</td>
+                        <td>10:20</td>
+                        <td>Jadrolinija</td>
+                    </tr>
+                    <tr>
+                        <td>10:30</td>
+                        <td>11:20</td>
+                        <td>Krilo</td>
+                    </tr>
+                    <tr>
+                        <td>11:30</td>
+                        <td>12:20</td>
+                        <td>Jadrolinija</td>
+                    </tr>
+                    <tr>
+                        <td>13:30</td>
+                        <td>14:20</td>
+                        <td>Krilo</td>
+                    </tr>
+                    <tr>
+                        <td>18:30</td>
+                        <td>19:20</td>
+                        <td>Krilo</td>
+                    </tr>
+                    <tr>
+                        <td>19:30</td>
+                        <td>11:20</td>
+                        <td>Jadrolinija</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        
+        <!------------ Footer: Social media links i copyright ------------>
+        <footer>
+            <h2 class="title">Follow Us</h2>
+            <span class="title-underline"></span>
+            <div id="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            </div>
+            <div id="kontakt">
+                <a href="https://visithvar.hr/hr/" target="_blank"><img src="./source/kontakt/turisticka.png" alt="turisticka zajednica"></a>
+                <a href="https://www.jadrolinija.hr/" target="_blank"><img src="./source/kontakt/jadrolinija.png" alt="Jadrolinija"></a>
+                <a href="https://www.krilo.hr/" target="_blank"><img src="./source/kontakt/kapetan-Luka.jpg" alt="Kapetan Luka"></a>
+            </div>
+            <p>
+                &copy;<em> 2023, Sva prava pridržana</em>
+                <br />
+                <strong>Kristiana Barbarić</strong>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
